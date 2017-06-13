@@ -12,6 +12,7 @@ h1 {
 
 }
 
+
 h2 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
@@ -37,7 +38,7 @@ h3 {
 .about-me {
     background-color: white;
     border: 1px solid gray;
-    width: 560px;
+    width: 53%;
     padding: 20px;
     /* margin-left: 20px; */
     float: left;
@@ -46,20 +47,22 @@ h3 {
 }
 
 .social-media {
- background-color: white;
+    background-color: white;
     float: right;
     position: fixed;
     left: 63%;
     /* top: 143px; */
     padding: 20px;
     margin-top: 30px;
+    width: 30%;
 }
 
 .background	{
 	background-image: url(../images/zigzagwool.png);
-    height: 100%;
+    height: 900px;
     position: fixed;
     width: 100%;
+
 }
 
 header {
@@ -93,7 +96,8 @@ li {
     float: left;
     list-style: none;
     border-right: 1px solid gray;
-    padding: 0px 30px 0px 30px;    
+    padding: 0px 30px 0px 30px;
+
 }
 
 ul {
@@ -101,7 +105,9 @@ ul {
     width: 370px;
     right: 35px;
     top: 26px;
+
 }
+
 
 input[type=text] {
     width: 100%;
@@ -131,4 +137,45 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+
+
+.containerb {
+  position: relative;
+  width: 50%;
+  float: left;
+  overflow: scroll;
+}
+
+.imageb {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlayb {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+ }
+
+.containerb:hover .overlayb {
+  opacity: .8;
+}
+
+.textb {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
